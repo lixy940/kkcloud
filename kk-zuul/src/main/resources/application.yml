@@ -1,0 +1,19 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: service-gateway
+
+zuul:
+  routes:
+    api-kkserver:
+      path: /kkserver/**
+      serviceId: service-hi
+    api-kkclient:
+      path: /kkclient/**
+      serviceId: service-feign
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
