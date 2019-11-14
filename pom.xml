@@ -111,7 +111,11 @@
                 <version>${project.version}</version>
             </dependency>
 
-
+            <dependency>
+                <groupId>com.lixy.kkcloud</groupId>
+                <artifactId>kk-tools</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
